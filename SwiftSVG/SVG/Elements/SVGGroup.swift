@@ -38,7 +38,7 @@
  Concrete implementation that creates a container from a `<g>` element and applies its attribites to all sublayers
  */
 
-final class SVGGroup: SVGContainerElement {
+final class SVGGroup: NSObject, SVGContainerElement {
     
     /// :nodoc:
     fileprivate static let groupAttributes: [String : (SVGGroup) -> (String, CAShapeLayer) -> ()] = [
